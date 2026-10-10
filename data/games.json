@@ -14,6 +14,21 @@
       "cover": "assets/rhythm-realm-cover.png",
       "controls": "鼠标或触屏点击、长按、滑动；先选音乐，再点击 INITIALIZE。",
       "web": "games/rhythm-realm/0.0.2/?v=ac97cc38"
+    },
+    {
+      "id": "panopticon-stage-0.0.4",
+      "title": "Panopticon Stage",
+      "description": "让八个角色组成你的音乐舞台。八份音轨已默认装配，点击角色加入演唱，也可以替换自己的音频。",
+      "version": "0.0.4",
+      "updated": "2026-10-10",
+      "tags": [
+        "音乐舞台",
+        "八人合奏",
+        "手机横屏"
+      ],
+      "cover": "assets/panopticon-stage-cover.jpg",
+      "controls": "手机横屏；点击 INITIALIZE_STAGE 进入舞台，再点击角色演唱。点击音轨后选择角色，或拖动音轨装配；向下拖动角色卸载。",
+      "web": "games/panopticon-stage/0.0.4/?v=cd33d457"
     }
   ]
 }
