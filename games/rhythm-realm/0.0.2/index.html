@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Rhythm Realm · 0.0.2</title>
+    <meta name="description" content="Rhythm Realm 0.0.2 网页试玩。导入本地音乐，自动分析节拍并生成谱面；也可直接开始节拍器练习。">
+    <meta name="game-version" content="0.0.2">
+    <style>
+      body {
+        font-family: 'Rajdhani', sans-serif;
+        background-color: #0f172a;
+        color: #e0e7ff;
+      }
+      .font-display {
+        font-family: 'Orbitron', sans-serif;
+      }
+      /* Custom Scrollbar for Webkit */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+
+      /* Glow Effects */
+      .neon-text {
+        text-shadow: 0 0 10px rgba(59, 130, 246, 0.5), 0 0 20px rgba(59, 130, 246, 0.3);
+      }
+      .neon-border {
+        box-shadow: 0 0 5px rgba(59, 130, 246, 0.3), inset 0 0 5px rgba(59, 130, 246, 0.1);
+      }
+      .neon-box-focus:focus-within {
+        box-shadow: 0 0 15px rgba(168, 85, 247, 0.4), inset 0 0 10px rgba(168, 85, 247, 0.1);
+        border-color: #a855f7;
+      }
+    </style>
+
+
+  <script type="module" crossorigin src="./assets/index-19a2125b.js"></script>
+  <link rel="stylesheet" href="./assets/index-748a6783.css">
+</head>
+  <body>
+    <div id="root"></div>
+
+  </body>
+</html>

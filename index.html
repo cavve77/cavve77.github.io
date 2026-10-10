@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#111311">
-  <meta name="description" content="cavve77 的个人游戏试玩站。探索游戏原型，在浏览器中试玩，或下载体验版本。">
+  <meta name="description" content="cavve77 的个人游戏试玩站。在线体验 Rhythm Realm 0.0.2，导入自己的音乐，探索自动生成的音游谱面。">
   <title>CAVVE PLAY · 游戏试玩站</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
@@ -15,7 +15,7 @@
   <div class="shell">
     <header class="header">
       <a class="brand" href="./" aria-label="CAVVE PLAY 首页"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>CAVVE<span class="brand-light"> / PLAY</span></span></a>
-      <nav aria-label="主导航"><a href="#library">试玩目录</a><a href="#about">关于这里</a><a class="github-link" href="https://github.com/cavve77/cavve77.github.io" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></nav>
+      <nav aria-label="主导航"><a href="#library">试玩目录</a><a href="#about">如何游玩</a><a class="github-link" href="games/rhythm-realm/0.0.2/">立即试玩 <span aria-hidden="true">↗</span></a></nav>
     </header>
     <main>
       <section class="hero" aria-labelledby="hero-title">
@@ -23,8 +23,8 @@
           <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> INDEPENDENT GAME PLAYGROUND</p>
           <h1 id="hero-title">小作品，<br>随时<span class="accent">开一局。</span></h1>
           <p class="intro">这里是 cavve77 的游戏试验场。<br>收集灵感、探索玩法，也分享每个逐渐成形的世界。</p>
-          <a class="button primary" href="#library">探索试玩 <span aria-hidden="true">↘</span></a>
-          <div class="hero-note"><span class="line" aria-hidden="true"></span> 原型 · 试玩 · 持续更新</div>
+          <a class="button primary" href="games/rhythm-realm/0.0.2/">试玩 Rhythm Realm <span aria-hidden="true">↗</span></a>
+          <div class="hero-note"><span class="line" aria-hidden="true"></span> 最新试玩 · Rhythm Realm 0.0.2</div>
         </div>
         <div class="art" aria-hidden="true">
           <div class="art-top"><span>PLAY / LAB</span><span class="art-dots">● ● ●</span></div>
@@ -35,7 +35,7 @@
       <section class="library" id="library" aria-labelledby="library-title">
         <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="library-title">试玩目录<span class="count" id="game-count">0</span></h2></div><p>发现一个新点子，从一次试玩开始。</p></div>
         <div class="toolbar">
-          <div class="filters" role="group" aria-label="按试玩方式筛选"><button class="filter active" data-filter="all" aria-pressed="true">全部游戏</button><button class="filter" data-filter="web" aria-pressed="false">网页试玩</button><button class="filter" data-filter="download" aria-pressed="false">下载体验</button></div>
+          <div class="filters" role="group" aria-label="按试玩方式筛选"><button class="filter active" data-filter="all" aria-pressed="true">全部游戏</button><button class="filter" data-filter="web" aria-pressed="false">网页试玩</button></div>
           <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索游戏或关键词" aria-label="搜索游戏或关键词" autocomplete="off"></label>
         </div>
         <p class="result-summary sr-only" id="result-summary" role="status" aria-live="polite"></p>
@@ -47,10 +47,10 @@
       </section>
       <section class="about" id="about" aria-labelledby="about-title">
         <div><p class="eyebrow">A SPACE FOR EXPERIMENTS</p><h2 id="about-title">从一个想法，<br>到一个可玩的世界。</h2><p>这里存放个人游戏的原型与试玩版本。<br>作品会随着开发逐步更新，欢迎回来看看。</p></div>
-        <div class="play-notes"><article><span class="note-number">01</span><div><h3>在浏览器里，直接开玩</h3><p>带有“网页试玩”的作品，点击即可启动。部分游戏建议使用电脑和键盘体验。</p></div></article><article><span class="note-number">02</span><div><h3>下载版本，慢慢探索</h3><p>提供安装包的作品会标明适用平台。具体操作和版本说明会随每款游戏一起列出。</p></div></article></div>
+        <div class="play-notes"><article><span class="note-number">01</span><div><h3>在浏览器里，直接开玩</h3><p>点击“立即试玩”进入游戏，用鼠标或触屏操作。不选择音乐也可以开始节拍器练习。</p></div></article><article><span class="note-number">02</span><div><h3>你的音乐，你的谱面</h3><p>导入自己的音频，自动分析节拍并生成谱面。音乐在你的浏览器中处理，不上传到站点。</p></div></article></div>
       </section>
     </main>
-    <footer><a class="brand footer-brand" href="./">CAVVE<span class="brand-light"> / PLAY</span></a><p>个人作品 · 游戏原型 · 一点好奇心</p><a href="https://github.com/cavve77" target="_blank" rel="noopener noreferrer">cavve77 <span aria-hidden="true">↗</span></a></footer>
+    <footer><a class="brand footer-brand" href="./">CAVVE<span class="brand-light"> / PLAY</span></a><p>个人作品 · 游戏原型 · 一点好奇心</p><a href="#library">返回试玩目录 <span aria-hidden="true">↑</span></a></footer>
   </div>
 </body>
 </html>

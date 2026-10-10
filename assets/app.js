@@ -40,13 +40,12 @@ function card(game, index) {
   if (game.controls) body.append(el("p", "game-controls", `操作：${game.controls}`));
   const actions = el("div", "game-actions");
   if (game.web) { const link = action("立即试玩", game.web, true); if (link) actions.append(link); }
-  for (const item of game.downloads || []) { const link = action(`${item.platform || "游戏"} 下载`, item.url); if (link) actions.append(link); }
   body.append(actions); node.append(cover, body); return node;
 }
 function render() {
   const matches = state.games.filter(game => {
-    const platform = state.filter === "all" || (state.filter === "web" && game.web) || (state.filter === "download" && game.downloads?.length);
-    const content = [game.title, game.description, ...(game.tags || []), ...(game.downloads || []).map(item => item.platform)].join(" ").toLocaleLowerCase();
+    const platform = state.filter === "all" || (state.filter === "web" && game.web);
+    const content = [game.title, game.description, ...(game.tags || [])].join(" ").toLocaleLowerCase();
     return platform && content.includes(state.query);
   });
   const grid = document.getElementById("game-grid"); grid.replaceChildren(...matches.map(card));
@@ -72,11 +71,10 @@ fetch("data/games.json", { cache: "no-cache" }).then(response => {
   if (!response.ok) throw new Error("catalog unavailable"); return response.json();
 }).then(data => {
   if (!Array.isArray(data.games)) throw new Error("invalid catalog");
-  state.games = data.games.filter(game => game && typeof game.title === "string" && (safeUrl(game.web) || game.downloads?.some(item => safeUrl(item.url)))).map(game => ({
+  state.games = data.games.filter(game => game && typeof game.title === "string" && safeUrl(game.web)).map(game => ({
     ...game,
     web: safeUrl(game.web) ? game.web : null,
-    tags: Array.isArray(game.tags) ? game.tags.filter(tag => typeof tag === "string") : [],
-    downloads: Array.isArray(game.downloads) ? game.downloads.filter(item => item && safeUrl(item.url)) : []
+    tags: Array.isArray(game.tags) ? game.tags.filter(tag => typeof tag === "string") : []
   }));
   render();
 }).catch(() => { state.failed = true; render(); });

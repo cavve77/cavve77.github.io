@@ -1,3 +1,15 @@
 {
-  "games": []
+  "games": [
+    {
+      "id": "rhythm-realm-0.0.2",
+      "title": "Rhythm Realm",
+      "description": "导入你喜欢的音乐，让节拍变成一张可玩的谱面。四档难度，单击、长按、滑动与双点连打，也可以直接开始节拍器练习。",
+      "version": "0.0.2",
+      "updated": "2026-10-10",
+      "tags": ["音游", "自选音乐", "自动谱面"],
+      "cover": "assets/rhythm-realm-cover.png",
+      "controls": "鼠标或触屏点击、长按、滑动；先选音乐，再点击 INITIALIZE。",
+      "web": "games/rhythm-realm/0.0.2/"
+    }
+  ]
 }

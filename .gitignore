@@ -9,3 +9,6 @@ work/
 *.blend1
 .env
 .env.*
+/tools/
+/添加网页游戏.cmd
+/games/README.md
