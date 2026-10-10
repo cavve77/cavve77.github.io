@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+.godot/
+node_modules/
+work/
+*.log
+*.blend
+*.blend1
+.env
+.env.*
